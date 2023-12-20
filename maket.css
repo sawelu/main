@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 header, nav, section, footer {
@@ -12,7 +13,7 @@ header {
   background-color: #333;
   color: #fff;
   background: url(img/1.jpg) no-repeat  center;
-  height: 100px;
+  height: 150px;
 }
 
 nav {
@@ -38,38 +39,45 @@ nav ul li a {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 70%;
   margin: 20px auto;
   flex-wrap: wrap;
+  
 }
-
 .card {
   width: 25%;
   border: 0px solid black;
   padding: 20px;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .card__image {
-  background: url(img/2.jpg) no-repeat center ; 
-  height: 200px;
+  height: 300px;
   background-color: #a2a2a2;
   margin: auto;
+  background: url(img/2.jpg) no-repeat center;
 }
 
 .card__description {
-  margin-top: 30px;
+  margin-top: 15px;
   text-align: center;
-
 }
-footer {
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.content {
+  padding-bottom: 100px;
+}
+.footer {
   background-color: #f2f2f2;
   color: #fff;
   background-color: #333;
   font-size: 12px;
   padding: 10px;
-  position: fixed;
+  position: absolute;
+  left: 0;
   bottom: 0px;
-  width: 100%;
+  width: 99%;
   height: 40px;
 }
